@@ -1,0 +1,48 @@
+/*Shobi owns a garment factory. She gives special offers to her customers for all occasions.  She wants to give special discounts to her esteemed customers for this Christmas and New Year. The discount ranges from 0% to 40%, it depends upon the customer’s bill amount. She categorizes the discount details as follows:
+
+< 5000 ===> No discount
+5000 to 10000 ===> 10%
+10001 to 50000 ===> 20%
+50001 to 100000 ===> 30 %
+> 100000 ===> 40%.
+
+And she is not good at Mathematics. You are a Software Engineer and she contacts you for support. Kindly help her to develop to calculate the bill amount and print the bill in the following format
+
+Bill Amount :  XXXXXXX.XX
+Discount (-) :    XXXX.XX
+        *******************
+               XXXXXXX.XX
+	    *******************/
+
+#include<stdio.h>
+void main()
+{
+    int n;
+    scanf("%d",&n);
+    if(n<5000)
+    {
+        printf("No discount");
+    }
+    else if(n>=5000&&n<=10000)
+    {
+        printf("10 percent ");
+    }
+    else if(n>10000&&n<=50000)
+    {
+        printf("20 percent");
+    }
+    else if(n>50000&&n<=100000)
+    {
+        printf("30 percent");
+    }
+    else if(n>100000)
+    {
+        printf("40 percent");
+    }
+    printf("\n");
+    printf("Bill Amount : XXXXXXX.XX\n");
+    printf("Discount (-):    XXXX.XX\n");
+    printf("            *******************\n");
+    printf("              XXXXXXX.XX\n");
+    printf("            *******************\n");
+}

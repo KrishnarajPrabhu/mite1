@@ -1,0 +1,16 @@
+#include<stdio.h>
+void main()
+{
+    char a[100];
+    int count=0;
+    printf("enter the string\n");
+    scanf("%s",a);
+    for(int q=0;q<sizeof(a);q++)
+    {
+        if(a[q]=="a" || a[q]=="e" || a[q]=="i" || a[q]=="o"||a[q]=="u")
+        {
+            count++;
+        }
+    }
+    printf("%d",count);
+}

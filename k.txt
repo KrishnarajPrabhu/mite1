@@ -1,0 +1,14 @@
+//Write a program in C to read N numbers from keyboard and find their sum and average.
+
+#include<stdio.h>
+void main()
+{
+  int i,n,sum=0,num1,num2,num3;
+  float avg;
+  printf("Enter the values");
+  scanf("%d%d%d",&num1,&num2,&num3);
+  sum=num1+num2+num3;
+  avg=sum/3;
+  printf("Sum=%d\n",sum);
+  printf("Average=%g\n",avg);
+}

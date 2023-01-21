@@ -1,0 +1,31 @@
+#include <stdio.h>
+
+int main()
+{
+  printf("Welcome to my game!\n");
+
+  int score = 0;
+  int lives = 3;
+
+  while (lives > 0)
+  {
+    printf("Enter a number: ");
+
+    int n;
+    scanf("%d", &n);
+
+    if (n % 2 == 0)
+    {
+      score++;
+      printf("Correct! Your score is now %d.\n", score);
+    }
+    else
+    {
+      lives--;
+      printf("Incorrect! You have %d lives left.\n", lives);
+    }
+  }
+
+  printf("Game over! Your final score is %d.\n", score);
+  return 0;
+}
